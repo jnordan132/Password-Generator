@@ -1,5 +1,5 @@
-// import Slider from "@mui/material/Slider";
-// import Switch from "@mui/material/Switch";
+import Slider from "@mui/material/Slider";
+import Switch from "@mui/material/Switch";
 import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "../../App.css";
@@ -114,20 +114,19 @@ function PasswordInfo() {
 
         <div className="form-group">
           <label htmlFor="password-strength">Password length</label>
-          <input
-            defaultValue={passwordLength}
+          <Slider
+            defaultValue='15'
+            valueLabelDisplay="auto"
             onChange={(e) => setPasswordLength(e.target.value)}
-            type="number"
             id="password-strength"
             name="password-strength"
-            max="20"
-            min="10"
+            max="30"
           />
         </div>
 
         <div className="form-group">
-          <label htmlFor="uppercase-letters">Include Uppercase Letters</label>
-          <input
+          <label htmlFor="uppercase-letters">Include Uppercase</label>
+          <Switch
             checked={includeUppercase}
             onChange={(e) => setIncludeUppercase(e.target.checked)}
             type="checkbox"
@@ -137,8 +136,8 @@ function PasswordInfo() {
         </div>
 
         <div className="form-group">
-          <label htmlFor="lowercase-letters">Include Lowercase Letters</label>
-          <input
+          <label htmlFor="lowercase-letters">Include Lowercase</label>
+          <Switch
             checked={includeLowercase}
             onChange={(e) => setIncludeLowercase(e.target.checked)}
             type="checkbox"
@@ -149,7 +148,7 @@ function PasswordInfo() {
 
         <div className="form-group">
           <label htmlFor="include-numbers">Include Numbers</label>
-          <input
+          <Switch
             checked={includeNumbers}
             onChange={(e) => setIncludeNumbers(e.target.checked)}
             type="checkbox"
@@ -160,7 +159,7 @@ function PasswordInfo() {
 
         <div className="form-group">
           <label htmlFor="include-symbols">Include Symbols</label>
-          <input
+          <Switch
             checked={includeSymbols}
             onChange={(e) => setIncludeSymbols(e.target.checked)}
             type="checkbox"
