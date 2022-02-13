@@ -1,10 +1,14 @@
-import './App.css';
-import PasswordInfo from './components/PasswordInfo';
+import "./App.css";
+import Nav from "./components/Nav";
+import Main from "./pages/Main";
 
 function App() {
   return (
     <div className="App">
-      <PasswordInfo />
+      <Nav />
+      <div>
+        <Main />
+      </div>
     </div>
   );
 }

@@ -4,12 +4,25 @@
   overflow: hidden;
 }
 
+.main {
+  display: flex;
+}
+
+.nav {
+  height: 7%;
+  width: 100vw;
+  top: 0;
+  position: fixed;
+  background-color: #5687a8;
+  z-index: 1;
+}
+
 .container {
-  width: 365px;
-  margin-top: 10%;
+  width: 50vw;
+  margin-top: 4%;
   margin-bottom: 10%;
   margin-left:auto;
-  margin-right:auto;
+  margin-right: .5%;
 }
 
 .generator {
@@ -17,6 +30,7 @@
   border-radius: 7px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.753);
   padding: 20px;
+  height: 70vh;
 }
 
 .generator__header {
@@ -33,6 +47,7 @@
   color: #fff;
   height: 46px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .copy__btn {
@@ -68,6 +83,46 @@
 
 
 #password-strength {
-  width: 40%;
+  width: 20%;
   color:#5687a8;
+}
+
+.savedPasswords {
+  display: flex;
+  margin-top: 150px;
+}
+
+.add {
+  margin-top: 20px;
+}
+
+.addBtn {
+  margin-left: 10px;
+  padding: 5px;
+  width: 100%;
+  font-size: 20px;
+  border: none;
+  background-color: #c0c0c0;
+}
+
+.title input {
+  height: 30px;
+  width: 365px;
+  border: none;
+  border-radius: 4px;
+  background-color: #c0c0c0;
+  margin: 5px;
+}
+
+.password {
+  width: 75%;;
+}
+
+.password input {
+  height: 30px;
+  width: 365px;
+  border: none;
+  border-radius: 4px;
+  background-color: #c0c0c0;
+  margin: 5px;
 }
