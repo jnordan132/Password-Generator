@@ -112,7 +112,7 @@ function PasswordInfo() {
           </button>
         </div>
 
-        <div className="form-group">
+          <div className="form-group">
           <label htmlFor="password-strength">Password length</label>
           <Slider
             defaultValue='15'
@@ -120,8 +120,8 @@ function PasswordInfo() {
             onChange={(e) => setPasswordLength(e.target.value)}
             id="password-strength"
             name="password-strength"
-            max="30"
-          />
+            max="15"
+          /> 
         </div>
 
         <div className="form-group">
