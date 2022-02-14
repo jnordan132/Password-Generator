@@ -112,21 +112,25 @@ function PasswordInfo() {
           </button>
         </div>
 
-          <div className="form-group">
+        <div className="form-group">
           <label htmlFor="password-strength">Password length</label>
           <Slider
-            defaultValue='15'
+            className="switch"
+            defaultValue="15"
             valueLabelDisplay="auto"
             onChange={(e) => setPasswordLength(e.target.value)}
             id="password-strength"
             name="password-strength"
             max="15"
-          /> 
+          />
         </div>
+
+        <div className="lineBreak" />
 
         <div className="form-group">
           <label htmlFor="uppercase-letters">Include Uppercase</label>
           <Switch
+            className="switch"
             checked={includeUppercase}
             onChange={(e) => setIncludeUppercase(e.target.checked)}
             type="checkbox"
@@ -135,9 +139,12 @@ function PasswordInfo() {
           />
         </div>
 
+        <div className="lineBreak" />
+
         <div className="form-group">
           <label htmlFor="lowercase-letters">Include Lowercase</label>
           <Switch
+            className="switch"
             checked={includeLowercase}
             onChange={(e) => setIncludeLowercase(e.target.checked)}
             type="checkbox"
@@ -146,9 +153,12 @@ function PasswordInfo() {
           />
         </div>
 
+        <div className="lineBreak" />
+
         <div className="form-group">
           <label htmlFor="include-numbers">Include Numbers</label>
           <Switch
+            className="switch"
             checked={includeNumbers}
             onChange={(e) => setIncludeNumbers(e.target.checked)}
             type="checkbox"
@@ -157,9 +167,12 @@ function PasswordInfo() {
           />
         </div>
 
+        <div className="lineBreak" />
+
         <div className="form-group">
           <label htmlFor="include-symbols">Include Symbols</label>
           <Switch
+            className="switch"
             checked={includeSymbols}
             onChange={(e) => setIncludeSymbols(e.target.checked)}
             type="checkbox"

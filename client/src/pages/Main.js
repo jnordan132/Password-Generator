@@ -4,8 +4,8 @@ import PasswordInfo from "../components/PasswordInfo";
 function Main() {
     return (
         <div className="main">
-            <SavedPasswords />
             <PasswordInfo />
+            <SavedPasswords />
         </div>
     )
 }

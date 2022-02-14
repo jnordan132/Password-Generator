@@ -9,9 +9,6 @@ function SavedPasswords() {
           <input type="text" placeholder="Password" />
         </div>
       </div>
-      <div className="add">
-        <button className="addBtn">Add</button>
-      </div>
     </div>
   );
 }
