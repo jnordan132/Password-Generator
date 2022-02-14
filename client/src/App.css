@@ -110,10 +110,11 @@
   background-color: #3f3f3f;
   color: #fff;
   margin: 5px;
+  text-align: center;
 }
 
 .password {
-  width: 75%;;
+  width: 75%;
 }
 
 .password input {
@@ -124,6 +125,7 @@
   background-color: #3f3f3f;
   color: #fff;
   margin: 5px;
+  text-align: center;
 }
 
 ::placeholder {
