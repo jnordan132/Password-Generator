@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
-  "homepage": "https://jnordan132.github.io/Password-Generator/",
   "scripts": {
     "killservers": "killall -9 node",
     "start": "node server/server.js",
