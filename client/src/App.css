@@ -97,9 +97,13 @@
   margin-top: 2%;
 }
 
+.savedPasswords button {
+  margin-right: auto;
+  height: 25px;
+}
+
 .savedPasswords .group{
   margin-left: auto;
-  margin-right: auto;
 }
 
 .title input {
