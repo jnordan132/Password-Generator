@@ -9,7 +9,7 @@ function SavedPasswords() {
           <input type="text" placeholder="Password" />
         </div>
       </div>
-      <button>Add</button>
+      <button>+</button>
     </div>
   );
 }
